@@ -36,11 +36,9 @@
 
                 {% endfor %}
             </div>
-
         </div>
     </div>
 </div>
-
 
 <!-- Modal starts here -->
 {% for image_item in images %}
@@ -55,7 +53,6 @@
                 </button>
             </div>
             <div class="modal-body">
-
                 <div>
                     <figure class="">
                         <img class="img-fluid" src="{{image_item.image_file.url}}"></a>
@@ -77,11 +74,9 @@
                                     value="https://jogallery.herokuapp.com/image/{{image_item.id}}"
                                     id="{{image_item.id}}" readonly="readonly">
                             </div>
-
                         </figcaption>
                     </figure>
                 </div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -91,7 +86,4 @@
     </div>
 </div>
 {% endfor %}
-
-
-
 {% endblock %}
