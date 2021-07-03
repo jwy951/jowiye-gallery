@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
     <link rel="icon" type="images/png" sizes="32x32" href="/static/favicon-32x32.png">
-    <link rel="icon" type="images/png" sizes="16x16" href="/static/favicon-16x16.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="/static/favicon-16x16.png"> -->
 
     {% if title %}
     <title>Jowiye Photo Gallery - {{title}}</title>
@@ -38,9 +38,9 @@
     {% include "navbar.html" %}
 
     {% block content %}
-    <div class="jumbotron jumbotron-fluid bg-dark">
+    <div class="jumbotron jumbotron-fluid badge-primary">
         <div class="">
-            <h2 class="display-4 text-center font-weight-bold text-white">Welcome to Jowiye Photo Gallery</h2>
+            <h2 class="display-6 text-center font-weight-bold text-white">Welcome to Jowiye Photo Gallery</h2>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
     {% endblock %}
     <div class="pt-4 mt-4 mb-4 pb-4"></div>
     <!-- Footer -->
-    <footer class="page-footer font-small primary-color-dark mt-4 pt-4">
+    <footer class="page-footer font-small success-color-dark mt-4 pt-4">
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2021 Copyright.
