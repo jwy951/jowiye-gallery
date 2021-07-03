@@ -40,8 +40,7 @@
                         <img class="img-fluid" src="{{image_item.image_file.url}}"></a>
                         <figcaption>
                             <!-- Image title -->
-                            <h3><a class="font-weight-bold mb-3 black-text" href="/image/{{image_item.id}}">{{
-                                    image_item.image_name }}</a></h3>
+                            <h3><a class="font-weight-bold mb-3 black-text" href="/images/{{image_item.id}}">{{image_item.image_name }}</a></h3>
                             <!-- Excerpt -->
                             <p class="dark-grey-text">{{ image_item.description }}</p>
                             <!-- Image data -->
@@ -52,7 +51,7 @@
                             </p>
                             <!-- The text field -->
                             Copy Image Link: <input class="form-control form-control-sm" type="text"
-                                value="https://jogallery.herokuapp.com/image/{{image_item.id}}" id="{{image_item.id}}"
+                                value="https://jowiyegallery.herokuapp.com/image/{{image_item.id}}" id="{{image_item.id}}"
                                 readonly="readonly">
 
                             <!-- The button used to copy the text -->
@@ -63,7 +62,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">exit</button>
                     <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>

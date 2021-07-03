@@ -48,7 +48,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModal3Label">{{ image_item.image_name }}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="exit" data-dismiss="modal" aria-label="exit">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -58,8 +58,7 @@
                         <img class="img-fluid" src="{{image_item.image_file.url}}"></a>
                         <figcaption>
                             <!-- Image title -->
-                            <h3><a class="font-weight-bold mb-3 black-text" href="/image/{{image_item.id}}">{{
-                                    image_item.image_name }}</a></h3>
+                            <h3><a class="font-weight-bold mb-3 black-text" href="/images/{{image_item.id}}">{{image_item.image_name }}</a></h3>
                             <!-- Excerpt -->
                             <p class="dark-grey-text">{{ image_item.description }}</p>
                             <!-- Image data -->
@@ -79,7 +78,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">exit</button>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
         </div>

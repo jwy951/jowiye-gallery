@@ -14,9 +14,9 @@ def index(request):
     date = dt.date.today()
     images = Image.get_images()
     location = Location.get_location()
-    locations = Location.get_location()
+    category = Category.get_category()
 
-    return render(request, 'index.html', {"date": date, "images":images, "location": location, "locations": locations})
+    return render(request, 'index.html', {"date": date, "images":images, "location": location, "category": category})
 
 
 def search_images(request):
@@ -56,7 +56,7 @@ def category(request, category):
     images = Image.get_by_category(category)
     locations = Location.get_location()
     message = f"{category}"
-    return render(request, 'category.html', {"message":message, "images":images, "locations":locations})
+    return render(request, 'category.html', {"message":message, "images":images, "categories":category})
 
 
 def navlocation(request):
