@@ -8,7 +8,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-dark primary-color sticky-top">
+    <nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-dark danger-color sticky-top">
 
         <!-- Navbar brand -->
         <a class="navbar-brand font-weight-bold" href="{% url 'index' %}">Jowiye Photo Gallery</a>
@@ -33,20 +33,20 @@
             </ul>
 
             <!-- Links -->
-
-            <form class="navbar-form" role="search" action="{% url 'search_results' %}">
-            
+            <form class="navbar-form" action="{% url 'search_results' %}">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search category" name="category">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search Categories" aria-label="Search"
+                        name="keyword">
+
                     <div class="input-group-btn">
                         <button class="btn btn-success" type="search"><i class="glyphicon glyphicon-search"></i></button>
                     </div>
                 </div>
-            
             </form>
         </div>
         <!-- Collapsible content -->
     </nav>
     <!--/.Navbar-->
 </body>
+
 </html>
