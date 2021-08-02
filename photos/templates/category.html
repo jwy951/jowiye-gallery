@@ -73,7 +73,7 @@
                             <div id="copylink">
                                 Copy Image Link: <input class="form-control form-control-sm" type="text"
                                     value="https://jowiyegallery.herokuapp.com/image/{{image_item.id}}"
-                                    id="{{image_item.id}}" readonly="readonly">
+                                    id="{{image_item.id}}.url" readonly="readonly">
                             </div>
 
                         </figcaption>
@@ -82,6 +82,8 @@
 
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-sm" onclick="myFunction( '{{image_item.id}}.url')">copy
+                </button>
                 <button type="button" class="btn btn-dander" data-dismiss="modal">exit</button>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
@@ -89,4 +91,14 @@
     </div>
 </div>
 {% endfor %}
+{%block script%}
+<script>
+
+    myFunction = (element) => {
+        document.getElementById(element).select();
+        document.execCommand("copy");
+    }
+
+</script>
+{%endblock%}
 {% endblock %}
